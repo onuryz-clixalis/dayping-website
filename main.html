@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dayping – Event Countdown App</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fefefe;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background: #09131d;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    h1 {
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      text-align: center;
+    }
+    .cta-button {
+      margin-top: 2rem;
+      background: #09131d;
+      color: white;
+      padding: 0.8rem 1.6rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .cta-button:hover {
+      background: #b93405;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #f4f4f4;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="display: flex; align-items: center; justify-content: center; gap: 1rem;">
+      <img src="daypingapplogo.png" alt="Dayping Logo" style="height: 50px;" />
+      <div>
+        <h1>Dayping</h1>
+        <p>Track your most important moments with stylish countdowns</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h2>Simple. Stylish. Countdown.</h2>
+    <p>Dayping helps you keep track of your upcoming events with elegance. Set multiple countdowns, stay organized, and never miss a moment worth remembering.</p>
+    <button class="cta-button" onclick="window.location.href='https://apps.apple.com/'">Download on the App Store</button>
+    <div style="margin-top: 1rem; text-align: center;">
+      <a href="privacypolicy.html" style="display: block; color: #d83f06; text-decoration: underline; margin: 0.5rem 0;">Privacy Policy</a>
+      <p style="margin-top: 1rem; font-size: 0.95rem; color: #555;">
+        For support, contact us at <a href="mailto:onuryilmaz@clixalis.com" style="color: #d83f06; text-decoration: underline;">onuryilmaz@clixalis.com</a>
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Dayping. All rights reserved.
+  </footer>
+</body>
+</html>

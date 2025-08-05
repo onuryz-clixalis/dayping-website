@@ -1,0 +1,80 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Dayping</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fefefe;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background: #09131d;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    main {
+      flex: 1;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h1 {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    pre {
+      white-space: pre-wrap;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #f4f4f4;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="display: flex; align-items: center; justify-content: center; gap: 1rem;">
+      <img src="daypingapplogo.png" alt="Dayping Logo" style="height: 50px;" />
+      <div>
+        <h1>Dayping</h1>
+        <p>Track your most important moments with stylish countdowns</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h1>Privacy Policy</h1>
+    <pre id="policyText">Loading...</pre>
+  </main>
+
+  <footer>
+    &copy; 2025 Dayping. All rights reserved.
+  </footer>
+
+  <script>
+    fetch('privacypolicy.txt')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('policyText').textContent = data;
+      })
+      .catch(error => {
+        document.getElementById('policyText').textContent = 'Unable to load privacy policy.';
+      });
+  </script>
+</body>
+</html>
