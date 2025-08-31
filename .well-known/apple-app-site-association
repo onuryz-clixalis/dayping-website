@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "PBU8B3H8JQ.com.onuryz.dayping",
+        "paths": [ "/event/*" ]
+      }
+    ]
+  }
+}
